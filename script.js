@@ -10,7 +10,7 @@ console.log(message);
 // Étape 3 : dans une fonction + // Étape 4 : avec un second paramètre
 function sayHello(firstName, hour) {
     let message = `Bonjour ${firstName} !`
-    
+
     if (hour >= 18) {
         message = `Bonsoir ${firstName} !`;
     } else {
@@ -20,8 +20,17 @@ function sayHello(firstName, hour) {
     document.querySelector('h1').innerText = message;
 }
 
-sayHello(newName, 20);
+sayHello(newName, 5);
 
 
+// ou encore :
 
+// const sayHello = (firstname, hour) => {
+//     if (hour >= 18) {
+//         return 'Bonsoir ' + firstname + ' !';
+//     } else {
+//         return 'Bonjour ' + firstname + ' !';
+//     }
+// }
 
+// document.querySelector('h1').innerText = sayHello("Eva", 1)
